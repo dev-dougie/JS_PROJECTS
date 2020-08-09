@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>CEP checker</title>
+</head>
+<body>
+<header>Buscador de CEP API </header>
+
+
+
+<div id="app">
+    <input type = 'text' required id = 'cep' placeholder="Digite o CEP aqui" maxlength="8"/>
+    <button>Buscar</button>
+    <li><label for = 'bairro'>Bairro: </label><span><input type = 'text' disabled placeholder="Bairro" id = 'bairro'/> </span></li>
+    <li><label for = 'cidade'>Cidade: </lable><span><input type =' text' disabled placeholder="Cidade" id = 'cidade'/></span> </li>
+    <li><label for = 'logradouro'>Logradouro: </lable><span><input type =' text' disabled placeholder="Logradouro" id = 'logradouro'/></span></li>
+    <!--<li><label for =  'numero'>Número: </label><span><input type = 'number' id = 'numero' maxlength="5" placeholder="Digite o número aqui"></span></li>-->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src = '../src/main.js'></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meus elementos JS</title>
+</head>
+
+<body><div class = "box">
+    <div id = "quadro1"></div>
+    <div id = "quadro2"></div>
+    <div id = "quadro3"></div></div>
+
+    <style>
+
+        body{
+            margin: opx;
+            background-image: url(https://wallpaperaccess.com/full/231705.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+
+
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:black;
+        border: 2px solid gray;
+        border-radius: 25px;
+        }
+
+
+        #quadro1{
+            width: 150px;
+            height: 150px;
+            background-color:black;
+            border: 2px solid gray;
+            border-radius: 100px;
+                }
+
+        #quadro2{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            border: 2px solid gray ;
+            border-radius: 100px;
+                }
+
+        #quadro3{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            border: 2px solid gray ;
+            border-radius: 100px;
+                }
+
+    </style>
+
+    <script>
+
+
+        window.onload =  function(){
+     
+            var oQuadro1 = document.getElementById("quadro1");
+            oQuadro1.onmouseover = function(){
+                oQuadro1.style.backgroundColor = "red";
+                
+            }
+
+            oQuadro1.onmouseout = function(){
+                    oQuadro1.style.backgroundColor = "";
+                }
+
+          
+        
+            var oQuadro2 = document.getElementById("quadro2");
+            oQuadro2.onmouseover = function(){
+                oQuadro2.style.backgroundColor = "yellow";
+            }
+            oQuadro2.onmouseout = function(){
+                    oQuadro2.style.backgroundColor = "";
+                }
+
+        
+            var oQuadro3 = document.getElementById("quadro3");
+
+            oQuadro3.onmouseover = function(){
+                oQuadro3.style.backgroundColor = "green";
+            }
+
+            oQuadro3.onmouseout = function(){
+                    oQuadro3.style.backgroundColor = "";
+                }
+
+        }
+
+    </script>
+</body>
+</html>

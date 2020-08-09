@@ -1,0 +1,64 @@
+body{
+    padding: 10px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+div{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+}
+
+
+li{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+input#cep{
+    border-radius: 4px;
+    border: 1px solid black
+}
+
+
+input{
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: black;
+    font-weight: 400;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgb(131, 131, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-weight: 400;
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    background-color: rgb(131, 131, 255);
+    padding: 20px;
+    margin-top: 0px;
+}
