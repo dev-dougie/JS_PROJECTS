@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin:0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: rgb(248, 248, 248);
+    border: 1px solid black;
+    padding: 3rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    margin: 0;
+    text-align: center;
+
+}
+
+label{
+    font-weight: bold;
+}
+
+.charater-amount-container{
+    display:flex;
+    align-items: center;
+
+}
+
+.number-input{
+    width: 2rem;
+    max-width: 2 !important;
+}
+
+.password-display{
+    background-color:white;
+    padding: 1rem;
+    border: 1px solid blue;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+button{
+    grid-column: span 2;
+    border-radius: 3px;
+    padding: 1rem;
+    border:none;
+    background-color:purple;
+    color:white;
+    font: Arial;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity:.9;
+    cursor:pointer;
+    transition: 0.6s;
+}
