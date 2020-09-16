@@ -1,0 +1,92 @@
+body, html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(79, 78, 78);
+    color: white;
+    
+}
+
+.container .search-group{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        margin: 0.9rem 0;
+        font-size: 2rem;
+        font-family: Bradley Hand ITC;
+
+}
+
+
+.container .search-group input{
+    width: 25vw;
+    padding: 0.4rem;
+    outline: none;
+    border: 1px solid rgb(199, 196, 196) ;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+.container .search-group button{
+    padding: 0.6rem;
+    background: rgb(122, 122, 237);
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 250px;
+    border-radius: 0.4rem;
+}
+
+.container .search-group button:hover{
+    cursor: pointer;
+}
+
+
+.result{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 30px;
+   
+}
+
+.result div{
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 6px;
+        margin: 15px 0;
+}
+
+.result div:hover{
+    background: white;
+    color: black;
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.result div img {
+    max-width: 200px;
+    max-height: 300px;
+    float: right;
+}
+
+.result a{
+    text-decoration: none;
+    margin: 15px 0;
+    background: rgb(122, 122, 237);
+    padding: 0.8rem;
+    border-radius: 6px;
+    color:white;
+}
+
