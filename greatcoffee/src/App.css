@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+@keyframes showBetter {
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+:root {
+  --fontSize: 80px;
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body {
+  background: var(--backgrond);
+  color: #fff;
+  margin: 50px 150px !important;
+}
+
+h1:nth-child(1) {
+  font-size: var(--fontSize);
+}
+
+h1:nth-child(2) {
+  color: var(--backgrond);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 109px;
+  letter-spacing: -0.03em;
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+nav {
+  margin-left: 120px;
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: none; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--button); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--button); /* creates padding around scroll thumb */
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 56px;
+  animation: showBetter 2s;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  main p {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    max-width: 373px;
+    margin-top: 88.5px;
+  }
+
+  main button{
+    margin-top: 88px;
+    margin-bottom: 98px;
+  }
+
+  .title-main {
+    font-size: var(--fontSize - 30);
+  }
+  
+  .subtitle-main {
+    color: var(--backgrond);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fontSize - 30);
+    margin-top: -30px;
+    line-height: 109px;
+    letter-spacing: -0.03em;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  }
+}
